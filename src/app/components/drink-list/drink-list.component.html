@@ -1,0 +1,11 @@
+<div class="drink-grid">
+  @for(drink of drinkList; track drink){
+  <app-drink
+    [showFavorites]="showFavorites"
+    [showDeleteFromFavorites]="showDeleteFromFavorites"
+    (deleteFromFavoritesEmitter)="onHandleDeleteFromFavorites()"
+    (selectDrinkEmitter)="onHandleSelectDrink($event)"
+    [drink]="drink"
+  ></app-drink>
+  }
+</div>

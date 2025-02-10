@@ -1,0 +1,23 @@
+main{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background-color: #2C3E50;
+  img{
+    max-width: 90%;
+    object-fit: contain;
+  }
+  button{
+    background-color: #FFFAE7;
+    padding: 20px 60px;
+    font-size: 48px;
+    font-weight: 400;
+    border: none;
+    cursor: pointer;
+    position: fixed;
+    right: 3%;
+    top: 45%;
+  }
+}

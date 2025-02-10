@@ -1,0 +1,21 @@
+@if(drink){
+<div (click)="selectDrink(drink)">
+  <img src="{{ drink.strDrinkThumb }}" />
+  <div class="opt">
+    <h3>{{ drink.strDrink }}</h3>
+    @if(showFavorites){
+    <span
+      (click)="toggleFavorite(drink); $event.stopPropagation()"
+      [style.color]="isFavorite(drink) ? 'red' : 'gray'"
+      >&#9829;</span
+    >
+    } @if(showDeleteFromFavorites){
+    <span (click)="deleteFromFavorites(drink); $event.stopPropagation()">
+      💔
+    </span>
+
+    }
+  </div>
+</div>
+
+}

@@ -1,0 +1,13 @@
+<app-header [title]="'Favoritos'"></app-header>
+@if(favorites.length > 0){
+  <app-drink-list
+  (deleteFromFavoritesEmitter)="onHandleDeleteFromFavorites()"
+  [showDeleteFromFavorites]="true"
+    [drinkList]="favorites"
+    (drinkSelectedEmitter)="onHandleDrinkSelected($event)"
+  ></app-drink-list>
+}@else{
+  <div class="no-favorites">
+    <h1>No tienes favoritos</h1>
+  </div>
+}

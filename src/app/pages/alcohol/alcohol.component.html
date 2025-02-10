@@ -1,0 +1,5 @@
+<app-header [title]="'Alcohol'"></app-header>
+<app-drink-list
+  (drinkSelectedEmitter)="onHandleDrinkSelected($event)"
+  [drinkList]="alcohol"
+></app-drink-list>

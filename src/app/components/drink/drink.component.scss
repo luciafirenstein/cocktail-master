@@ -1,0 +1,23 @@
+div {
+  cursor: pointer;
+  text-align: center;
+  img {
+    width: 365px;
+    height: 417px;
+  }
+  .opt{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    h3{
+      font-size: 48px;
+      margin: 0;
+    }
+    span{
+      cursor: pointer;
+      font-size: 48px;
+    }
+  }
+}
