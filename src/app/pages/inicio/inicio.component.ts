@@ -21,7 +21,7 @@ export class InicioComponent implements OnInit{
    featuredDrinks: string[] = [
     'Blue Margarita',
     'gin tonic',
-    'Frozen Daiquiri',
+    'Mojito',
   ];
 
   ngOnInit(): void {
